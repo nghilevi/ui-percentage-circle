@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="build/ui-percentage-circle.esm.js"></script>
+    <script nomodule src="build/ui-percentage-circle.js"></script>
+  </head>
+  <body>
+    <ui-percentage-circle pc="10"></ui-percentage-circle><br>
+    <ui-percentage-circle pc="20"></ui-percentage-circle><br>
+    <ui-percentage-circle pc="30"></ui-percentage-circle><br>
+    <ui-percentage-circle pc="50" name="pcWithIcon">
+      <p style="position:absolute; z-index: 1;left:50%; left: 30%;top: -5px;">Hi</p>
+    </ui-percentage-circle><br>
+    <ui-percentage-circle pc="50" name="pcWithIcon">
+      <div style="position:absolute; z-index: 1;left:28%;top: 9px;">
+        <img src="./assets/loan.png" alt="loan" width="20">
+      </div>
+    </ui-percentage-circle><br>
+   </body>
+</html>
