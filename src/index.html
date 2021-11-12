@@ -8,17 +8,24 @@
     <script type="module" src="build/ui-percentage-circle.esm.js"></script>
     <script nomodule src="build/ui-percentage-circle.js"></script>
   </head>
+  <style>
+    ui-percentage-circle{
+      margin-right: 10px;
+    }
+  </style>
   <body>
-    <ui-percentage-circle pc="10"></ui-percentage-circle><br>
-    <ui-percentage-circle pc="20"></ui-percentage-circle><br>
-    <ui-percentage-circle pc="30"></ui-percentage-circle><br>
-    <ui-percentage-circle pc="50" name="pcWithIcon">
-      <p style="position:absolute; z-index: 1;left:50%; left: 30%;top: -5px;">Hi</p>
-    </ui-percentage-circle><br>
-    <ui-percentage-circle pc="50" name="pcWithIcon">
-      <div style="position:absolute; z-index: 1;left:28%;top: 9px;">
-        <img src="./assets/loan.png" alt="loan" width="20">
-      </div>
-    </ui-percentage-circle><br>
+    <div style="display: flex;">
+      <ui-percentage-circle pc="10"></ui-percentage-circle>
+      <ui-percentage-circle pc="20"></ui-percentage-circle>
+      <ui-percentage-circle pc="30"></ui-percentage-circle>
+      <ui-percentage-circle pc="50" name="pcWithIcon">
+        <p style="position:absolute; z-index: 1;left:50%; left: 30%;top: -5px;">Hi</p>
+      </ui-percentage-circle>
+      <ui-percentage-circle pc="50" name="pcWithIcon">
+        <div style="position:absolute; z-index: 1;left:28%;top: 9px;">
+          <img src="./assets/loan.png" alt="loan" width="20">
+        </div>
+      </ui-percentage-circle>
+    </div>
    </body>
 </html>
